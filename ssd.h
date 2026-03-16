@@ -39,7 +39,7 @@ enum {
 enum {
     USER_IO = 0, // 호스트(사용자)가 보낸 요청 (처리 우선순위 높음)
     GC_IO = 1,   // 내부 GC가 생성한 요청 (Valid Page Copy 등)
-    MIG_IO = 2;
+    MIG_IO = 2
 };
 
 /* 섹터 및 페이지 상태 */

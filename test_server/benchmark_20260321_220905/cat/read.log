@@ -1,0 +1,10 @@
+=========================================
+ FIO Read Workload
+ Dir: /home/meen/NVMeVirt/mnt
+=========================================
+
+[Test 1] Random Read 4K
+fio: pid=0, err=5/file:filesetup.c:174, func=open, error=Input/output error
+fio: pid=0, err=5/file:filesetup.c:174, func=open, error=Input/output error
+fio: pid=0, err=5/file:filesetup.c:174, func=open, error=Input/output error
+fio: pid=0, err=5/file:filesetup.c:174, func=open, error=Input/output error

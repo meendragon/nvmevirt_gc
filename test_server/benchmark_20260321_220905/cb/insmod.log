@@ -1,0 +1,7 @@
+----------------------------------------
+ℹ️  기존 모듈 없음
+🚀 nvmev.ko 로드 중... (gc_mode=1: Cost-Benefit)
+   sudo insmod /home/meen/nvmevirt_gc/nvmev.ko memmap_start=4G memmap_size=12288M cpus=1,2,3,4 gc_mode=1
+✅ 성공! gc_mode=1 (Cost-Benefit)
+nvmev                  86016  0
+----------------------------------------

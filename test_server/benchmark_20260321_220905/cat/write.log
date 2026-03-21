@@ -1,0 +1,50 @@
+=========================================
+ FIO Write Workload
+ Dir: /home/meen/NVMeVirt/mnt
+=========================================
+
+[Phase 0] Initial fill...
+[Phase 0] Fill done
+
+[Phase 1] Uniform random (Greedy territory)
+[Phase 1] Done
+
+[Phase 2] Hot/Cold zipf locality (CB territory)
+[Phase 2] Done
+
+[Phase 3] Sequential burst (CAT territory)
+[Phase 3] Done
+
+[Phase 4] Hot spot shift (RL territory)
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=191893504, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=75182080, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=352608256, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=428793856, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=261910528, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=718630912, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=573444096, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=26312704, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=26312704, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=718630912, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=293871616, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=185868288, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=718630912, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=638361600, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=387108864, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=611860480, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=718630912, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=642117632, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=185868288, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=82755584, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=234737664, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=428793856, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=66387968, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=96927744, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=185868288, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=310923264, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=145235968, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=718630912, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=718630912, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=718630912, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=9388032, buflen=4096
+fio: io_u error on file /home/meen/NVMeVirt/mnt/phase4_shift.0.0: Input/output error: write offset=455573504, buflen=4096

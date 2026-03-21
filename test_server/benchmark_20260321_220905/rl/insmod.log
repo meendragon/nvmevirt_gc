@@ -1,0 +1,16 @@
+----------------------------------------
+🔄 기존 nvmev 모듈 제거 중...
+🚀 nvmev.ko 로드 중... (gc_mode=3: RL)
+   sudo insmod /home/meen/nvmevirt_gc/nvmev.ko memmap_start=4G memmap_size=12288M cpus=1,2,3,4 gc_mode=3
+insmod: ERROR: could not insert module /home/meen/nvmevirt_gc/nvmev.ko: Device or resource busy
+❌ 실패!
+[ 2179.626228] RAX: 0000000000000017 RBX: ffff99347b163e70 RCX: 0000000000000000
+[ 2179.626229] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000000
+[ 2179.626230] RBP: ffffb2a2c3e73c28 R08: 0000000000000000 R09: 0000000000000000
+[ 2179.626231] R10: 0000000000000000 R11: 0000000000000000 R12: ffff99347b163df8
+[ 2179.626232] R13: ffff99344b1aa600 R14: 0000000000097f1c R15: ffff99347b163df8
+[ 2179.626234] FS:  00007680133f4080(0000) GS:ffff9934bb800000(0000) knlGS:0000000000000000
+[ 2179.626235] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[ 2179.626236] CR2: 0000000000000000 CR3: 000000040130c005 CR4: 0000000000f72ef0
+[ 2179.626238] PKRU: 55555554
+[ 2179.626239] note: rmmod[8471] exited with irqs disabled

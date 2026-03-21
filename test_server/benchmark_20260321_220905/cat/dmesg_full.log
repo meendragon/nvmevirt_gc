@@ -1,0 +1,107 @@
+[ 1867.034822] [UFW BLOCK] IN=eno1 OUT= MAC=33:33:00:00:00:fb:e8:d8:d1:9a:aa:70:86:dd SRC=0000:0000:0000:0000:0000:0000:0000:0000 DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=72 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=ICMPv6 TYPE=131 CODE=0 
+[ 1867.225618] [UFW BLOCK] IN=eno1 OUT= MAC=01:00:5e:00:00:fb:e8:d8:d1:9a:aa:70:08:00 SRC=10.21.6.233 DST=224.0.0.251 LEN=32 TOS=0x00 PREC=0x00 TTL=1 ID=8 PROTO=2 
+[ 1886.038845] [UFW BLOCK] IN=eno1 OUT= MAC=01:00:5e:00:00:01:70:5d:cc:01:17:47:08:00 SRC=192.168.0.1 DST=224.0.0.1 LEN=28 TOS=0x00 PREC=0x00 TTL=1 ID=21720 PROTO=2 
+[ 1886.055147] [UFW BLOCK] IN=eno1 OUT= MAC=01:00:5e:00:00:fb:2c:4d:54:66:c4:8a:08:00 SRC=203.253.25.20 DST=224.0.0.251 LEN=32 TOS=0x00 PREC=0x00 TTL=1 ID=39630 PROTO=2 
+[ 1908.110469] [UFW BLOCK] IN=eno1 OUT= MAC=33:33:00:00:00:fb:e8:d8:d1:9a:aa:70:86:dd SRC=0000:0000:0000:0000:0000:0000:0000:0000 DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=72 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=ICMPv6 TYPE=131 CODE=0 
+[ 1908.321194] [UFW BLOCK] IN=eno1 OUT= MAC=01:00:5e:00:00:fb:e8:d8:d1:9a:aa:70:08:00 SRC=10.21.6.233 DST=224.0.0.251 LEN=32 TOS=0x00 PREC=0x00 TTL=1 ID=8 PROTO=2 
+[ 1952.273821] [UFW BLOCK] IN=eno1 OUT= MAC=33:33:00:00:00:fb:e8:d8:d1:9a:aa:70:86:dd SRC=0000:0000:0000:0000:0000:0000:0000:0000 DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=72 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=ICMPv6 TYPE=131 CODE=0 
+[ 1952.475090] [UFW BLOCK] IN=eno1 OUT= MAC=01:00:5e:00:00:fb:e8:d8:d1:9a:aa:70:08:00 SRC=10.21.6.233 DST=224.0.0.251 LEN=32 TOS=0x00 PREC=0x00 TTL=1 ID=8 PROTO=2 
+[ 1989.425812] [UFW BLOCK] IN=eno1 OUT= MAC=33:33:00:00:00:fb:e8:d8:d1:9a:aa:70:86:dd SRC=0000:0000:0000:0000:0000:0000:0000:0000 DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=72 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=ICMPv6 TYPE=131 CODE=0 
+[ 2006.019386] [UFW BLOCK] IN=eno1 OUT= MAC=01:00:5e:00:00:01:70:5d:cc:01:17:47:08:00 SRC=192.168.0.1 DST=224.0.0.1 LEN=28 TOS=0x00 PREC=0x00 TTL=1 ID=38486 PROTO=2 
+[ 2006.091057] [UFW BLOCK] IN=eno1 OUT= MAC=01:00:5e:00:00:fb:d8:43:ae:25:a5:2d:08:00 SRC=10.21.8.121 DST=224.0.0.251 LEN=32 TOS=0x00 PREC=0x00 TTL=1 ID=51548 PROTO=2 
+[ 2026.561982] [UFW BLOCK] IN=eno1 OUT= MAC=33:33:00:00:00:fb:e8:d8:d1:9a:aa:70:86:dd SRC=0000:0000:0000:0000:0000:0000:0000:0000 DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=72 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=ICMPv6 TYPE=131 CODE=0 
+[ 2026.753422] [UFW BLOCK] IN=eno1 OUT= MAC=01:00:5e:00:00:fb:e8:d8:d1:9a:aa:70:08:00 SRC=10.21.6.233 DST=224.0.0.251 LEN=32 TOS=0x00 PREC=0x00 TTL=1 ID=8 PROTO=2 
+[ 2031.045493] [UFW BLOCK] IN=eno1 OUT= MAC=01:00:5e:00:00:01:70:5d:cc:5b:b2:18:08:00 SRC=192.168.0.1 DST=224.0.0.1 LEN=28 TOS=0x00 PREC=0x00 TTL=1 ID=17765 PROTO=2 
+[ 2031.141955] [UFW BLOCK] IN=eno1 OUT= MAC=01:00:5e:00:00:fb:c8:5a:cf:08:84:29:08:00 SRC=203.253.25.74 DST=224.0.0.251 LEN=32 TOS=0x00 PREC=0x00 TTL=1 ID=11137 PROTO=2 
+[ 2048.875835] NVMeVirt: No free line!
+[ 2048.875842] BUG: kernel NULL pointer dereference, address: 0000000000000000
+[ 2048.875843] #PF: supervisor read access in kernel mode
+[ 2048.875845] #PF: error_code(0x0000) - not-present page
+[ 2048.875846] PGD 0 P4D 0 
+[ 2048.875849] Oops: Oops: 0000 [#1] PREEMPT SMP NOPTI
+[ 2048.875852] CPU: 1 UID: 0 PID: 7859 Comm: nvmev_dispatche Tainted: P           OE      6.14.0-27-generic #27~24.04.1-Ubuntu
+[ 2048.875854] Tainted: [P]=PROPRIETARY_MODULE, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+[ 2048.875855] Hardware name: HP HP Elite Tower 800 G9 Desktop PC/894D, BIOS U01 Ver. 02.19.01 09/22/2025
+[ 2048.875857] RIP: 0010:advance_write_pointer+0x165/0x220 [nvmev]
+[ 2048.875864] Code: 83 ea 10 0f 84 b8 00 00 00 48 8b 30 48 8b 48 08 48 89 4e 08 48 89 31 48 89 00 48 89 40 08 41 83 ac 24 cc 00 00 00 01 48 89 13 <8b> 02 89 43 14 41 3b 45 30 0f 8d a4 00 00 00 85 c0 0f 88 9c 00 00
+[ 2048.875865] RSP: 0018:ffffb2a2c3e73c10 EFLAGS: 00010246
+[ 2048.875867] RAX: 0000000000000017 RBX: ffff99347b163e70 RCX: 0000000000000000
+[ 2048.875868] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000000
+[ 2048.875869] RBP: ffffb2a2c3e73c28 R08: 0000000000000000 R09: 0000000000000000
+[ 2048.875870] R10: 0000000000000000 R11: 0000000000000000 R12: ffff99347b163df8
+[ 2048.875870] R13: ffff99344b1aa600 R14: 0000000000097f1c R15: ffff99347b163df8
+[ 2048.875871] FS:  0000000000000000(0000) GS:ffff9934bb080000(0000) knlGS:0000000000000000
+[ 2048.875873] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[ 2048.875873] CR2: 0000000000000000 CR3: 0000000003840001 CR4: 0000000000f72ef0
+[ 2048.875874] PKRU: 55555554
+[ 2048.875875] Call Trace:
+[ 2048.875877]  <TASK>
+[ 2048.875879]  do_gc.constprop.0.isra.0+0x38b/0xfa0 [nvmev]
+[ 2048.875883]  conv_proc_nvme_io_cmd+0xa25/0xaa0 [nvmev]
+[ 2048.875886]  nvmev_proc_io_sq+0x122/0x4a0 [nvmev]
+[ 2048.875889]  nvmev_dispatcher+0x15a/0x2c0 [nvmev]
+[ 2048.875891]  ? __pfx_nvmev_dispatcher+0x10/0x10 [nvmev]
+[ 2048.875893]  kthread+0xfb/0x230
+[ 2048.875896]  ? __pfx_kthread+0x10/0x10
+[ 2048.875897]  ret_from_fork+0x44/0x70
+[ 2048.875900]  ? __pfx_kthread+0x10/0x10
+[ 2048.875901]  ret_from_fork_asm+0x1a/0x30
+[ 2048.875904]  </TASK>
+[ 2048.875905] Modules linked in: nvmev(OE) xt_MASQUERADE xt_mark nft_chain_nat nf_nat snd_seq_dummy snd_hrtimer qrtr nvidia_uvm(PO) ip6t_REJECT nf_reject_ipv6 xt_hl ip6t_rt ipt_REJECT nf_reject_ipv4 xt_LOG nf_log_syslog nft_limit xt_limit xt_addrtype xt_tcpudp xt_conntrack nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 nft_compat snd_sof_pci_intel_tgl nf_tables snd_sof_pci_intel_cnl binfmt_misc snd_sof_intel_hda_generic soundwire_intel soundwire_cadence snd_sof_intel_hda_common snd_soc_hdac_hda snd_sof_intel_hda_mlink snd_sof_intel_hda snd_sof_pci snd_sof_xtensa_dsp nls_iso8859_1 snd_hda_codec_realtek snd_sof snd_hda_codec_generic snd_hda_scodec_component snd_sof_utils snd_soc_acpi_intel_match snd_soc_acpi_intel_sdca_quirks soundwire_generic_allocation snd_soc_acpi soundwire_bus snd_soc_sdca xe snd_soc_avs snd_soc_hda_codec snd_hda_ext_core snd_soc_core snd_compress snd_hda_codec_hdmi ac97_bus drm_gpuvm gpu_sched snd_pcm_dmaengine drm_ttm_helper drm_exec drm_suballoc_helper nvidia_drm(PO) intel_rapl_msr intel_rapl_common
+[ 2048.875935]  intel_uncore_frequency intel_uncore_frequency_common intel_pmc_core nvidia_modeset(PO) pmt_telemetry pmt_class intel_vsec mei_pxp snd_hda_intel mei_hdcp snd_intel_dspcfg cmdlinepart x86_pkg_temp_thermal snd_intel_sdw_acpi intel_powerclamp spi_nor snd_hda_codec coretemp nvidia(PO) spd5118 ucsi_ccg mtd kvm_intel i915 snd_hda_core snd_hwdep kvm snd_pcm snd_seq_midi snd_seq_midi_event snd_rawmidi irqbypass polyval_clmulni polyval_generic ghash_clmulni_intel snd_seq sha256_ssse3 sha1_ssse3 drm_buddy aesni_intel ttm snd_seq_device snd_timer crypto_simd drm_display_helper cryptd hp_wmi rapl sparse_keymap intel_cstate snd platform_profile serio_raw cec wmi_bmof i2c_i801 spi_intel_pci mei_me rc_core i2c_nvidia_gpu i2c_smbus spi_intel soundcore i2c_ccgx_ucsi i2c_mux mei i2c_algo_bit acpi_tad acpi_pad mac_hid sch_fq_codel msr parport_pc ppdev lp parport nvme_fabrics nvme_keyring efi_pstore nfnetlink dmi_sysfs ip_tables x_tables autofs4 nvme ucsi_acpi e1000e psmouse ahci typec_ucsi nvme_core video libahci typec
+[ 2048.875975]  nvme_auth wmi [last unloaded: nvmev(OE)]
+[ 2048.875978] CR2: 0000000000000000
+[ 2048.875980] ---[ end trace 0000000000000000 ]---
+[ 2048.902879] RIP: 0010:advance_write_pointer+0x165/0x220 [nvmev]
+[ 2048.902888] Code: 83 ea 10 0f 84 b8 00 00 00 48 8b 30 48 8b 48 08 48 89 4e 08 48 89 31 48 89 00 48 89 40 08 41 83 ac 24 cc 00 00 00 01 48 89 13 <8b> 02 89 43 14 41 3b 45 30 0f 8d a4 00 00 00 85 c0 0f 88 9c 00 00
+[ 2048.902890] RSP: 0018:ffffb2a2c3e73c10 EFLAGS: 00010246
+[ 2048.902893] RAX: 0000000000000017 RBX: ffff99347b163e70 RCX: 0000000000000000
+[ 2048.902894] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000000
+[ 2048.902895] RBP: ffffb2a2c3e73c28 R08: 0000000000000000 R09: 0000000000000000
+[ 2048.902896] R10: 0000000000000000 R11: 0000000000000000 R12: ffff99347b163df8
+[ 2048.902897] R13: ffff99344b1aa600 R14: 0000000000097f1c R15: ffff99347b163df8
+[ 2048.902898] FS:  0000000000000000(0000) GS:ffff9934bb080000(0000) knlGS:0000000000000000
+[ 2048.902899] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[ 2048.902900] CR2: 0000000000000000 CR3: 0000000464f7a004 CR4: 0000000000f72ef0
+[ 2048.902901] PKRU: 55555554
+[ 2048.902903] note: nvmev_dispatche[7859] exited with irqs disabled
+[ 2064.014070] [UFW BLOCK] IN=eno1 OUT= MAC=33:33:00:00:00:fb:e8:d8:d1:9a:aa:70:86:dd SRC=0000:0000:0000:0000:0000:0000:0000:0000 DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=72 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=ICMPv6 TYPE=131 CODE=0 
+[ 2064.037173] [UFW BLOCK] IN=eno1 OUT= MAC=33:33:00:00:00:fb:e8:d8:d1:9a:aa:70:86:dd SRC=0000:0000:0000:0000:0000:0000:0000:0000 DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=72 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=ICMPv6 TYPE=131 CODE=0 
+[ 2064.237656] [UFW BLOCK] IN=eno1 OUT= MAC=01:00:5e:00:00:fb:e8:d8:d1:9a:aa:70:08:00 SRC=10.21.6.233 DST=224.0.0.251 LEN=32 TOS=0x00 PREC=0x00 TTL=1 ID=8 PROTO=2 
+[ 2078.963514] nvme nvme1: I/O tag 901 (4385) opcode 0x1 (I/O Cmd) QID 1 timeout, aborting req_op:WRITE(1) size:4096
+[ 2078.963614] nvme nvme1: I/O tag 902 (d386) opcode 0x1 (I/O Cmd) QID 1 timeout, aborting req_op:WRITE(1) size:4096
+[ 2078.963633] nvme nvme1: I/O tag 903 (0387) opcode 0x1 (I/O Cmd) QID 1 timeout, aborting req_op:WRITE(1) size:4096
+[ 2078.963653] nvme nvme1: I/O tag 904 (c388) opcode 0x1 (I/O Cmd) QID 1 timeout, aborting req_op:WRITE(1) size:4096
+[ 2101.163721] [UFW BLOCK] IN=eno1 OUT= MAC=33:33:00:00:00:fb:e8:d8:d1:9a:aa:70:86:dd SRC=0000:0000:0000:0000:0000:0000:0000:0000 DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=72 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=ICMPv6 TYPE=131 CODE=0 
+[ 2109.170841] nvme nvme1: I/O tag 901 (4385) opcode 0x1 (I/O Cmd) QID 1 timeout, reset controller
+[ 2125.999934] [UFW BLOCK] IN=eno1 OUT= MAC=01:00:5e:00:00:01:70:5d:cc:01:17:47:08:00 SRC=192.168.0.1 DST=224.0.0.1 LEN=28 TOS=0x00 PREC=0x00 TTL=1 ID=63968 PROTO=2 
+[ 2126.062410] [UFW BLOCK] IN=eno1 OUT= MAC=01:00:5e:00:00:fb:d8:43:ae:25:a9:17:08:00 SRC=10.21.8.140 DST=224.0.0.251 LEN=32 TOS=0x00 PREC=0x00 TTL=1 ID=8928 PROTO=2 
+[ 2138.323984] [UFW BLOCK] IN=eno1 OUT= MAC=33:33:00:00:00:fb:e8:d8:d1:9a:aa:70:86:dd SRC=0000:0000:0000:0000:0000:0000:0000:0000 DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=72 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=ICMPv6 TYPE=131 CODE=0 
+[ 2138.524603] [UFW BLOCK] IN=eno1 OUT= MAC=01:00:5e:00:00:fb:e8:d8:d1:9a:aa:70:08:00 SRC=10.21.6.233 DST=224.0.0.251 LEN=32 TOS=0x00 PREC=0x00 TTL=1 ID=8 PROTO=2 
+[ 2151.024737] [UFW BLOCK] IN=eno1 OUT= MAC=01:00:5e:00:00:01:70:5d:cc:5b:b2:18:08:00 SRC=192.168.0.1 DST=224.0.0.1 LEN=28 TOS=0x00 PREC=0x00 TTL=1 ID=40112 PROTO=2 
+[ 2151.229862] [UFW BLOCK] IN=eno1 OUT= MAC=01:00:5e:00:00:fb:2c:f0:5d:5c:b6:e2:08:00 SRC=203.253.25.3 DST=224.0.0.251 LEN=32 TOS=0x00 PREC=0x00 TTL=1 ID=43472 PROTO=2 
+[ 2173.139195] nvme nvme1: Device not ready; aborting reset, CSTS=0x1
+[ 2173.160211] nvme nvme1: Abort status: 0x371
+[ 2173.160223] nvme nvme1: Abort status: 0x371
+[ 2173.160227] nvme nvme1: Abort status: 0x371
+[ 2173.160231] nvme nvme1: Abort status: 0x371
+[ 2174.168200] nvme nvme1: Device not ready; aborting reset, CSTS=0x1
+[ 2174.168219] nvme nvme1: Disabling device after reset failure: -19
+[ 2174.187522] Buffer I/O error on dev nvme1n1, logical block 296407, lost async page write
+[ 2174.187523] EXT4-fs (nvme1n1): shut down requested (2)
+[ 2174.187527] Aborting journal on device nvme1n1-8.
+[ 2174.187530] Buffer I/O error on dev nvme1n1, logical block 296408, lost async page write
+[ 2174.187530] kworker/u80:3: attempt to access beyond end of device
+               nvme1n1: rw=169985, sector=8650752, nr_sectors = 8 limit=0
+[ 2174.187533] Buffer I/O error on dev nvme1n1, logical block 1081344, lost sync page write
+[ 2174.187535] Buffer I/O error on dev nvme1n1, logical block 296439, lost async page write
+[ 2174.187535] JBD2: I/O error when updating journal superblock for nvme1n1-8.
+[ 2174.187537] Buffer I/O error on dev nvme1n1, logical block 296440, lost async page write
+[ 2174.187540] Buffer I/O error on dev nvme1n1, logical block 296455, lost async page write
+[ 2174.187542] Buffer I/O error on dev nvme1n1, logical block 296456, lost async page write
+[ 2174.187544] Buffer I/O error on dev nvme1n1, logical block 296460, lost async page write
+[ 2174.187546] Buffer I/O error on dev nvme1n1, logical block 296487, lost async page write
+[ 2174.187547] Buffer I/O error on dev nvme1n1, logical block 2621442, lost async page write
+[ 2175.418137] [UFW BLOCK] IN=eno1 OUT= MAC=01:00:5e:00:00:fb:e8:d8:d1:9a:aa:70:08:00 SRC=10.21.6.233 DST=224.0.0.251 LEN=32 TOS=0x00 PREC=0x00 TTL=1 ID=1 PROTO=2 
+[ 2175.421157] [UFW BLOCK] IN=eno1 OUT= MAC=33:33:00:00:00:fb:e8:d8:d1:9a:aa:70:86:dd SRC=0000:0000:0000:0000:0000:0000:0000:0000 DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=72 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=ICMPv6 TYPE=131 CODE=0 
+[ 2175.441606] [UFW BLOCK] IN=eno1 OUT= MAC=33:33:00:00:00:fb:e8:d8:d1:9a:aa:70:86:dd SRC=0000:0000:0000:0000:0000:0000:0000:0000 DST=ff02:0000:0000:0000:0000:0000:0000:00fb LEN=72 TC=0 HOPLIMIT=1 FLOWLBL=0 PROTO=ICMPv6 TYPE=131 CODE=0 

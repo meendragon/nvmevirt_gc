@@ -8,8 +8,11 @@
 .*.cmd
 .tmp_versions/
 
+*.sh
+
 # 로컬 설정 파일 (무시)
 Makefile.local
+test_local/
 
 # VS Code 설정 (무시)
 .vscode/

@@ -1,43 +1,57 @@
 #!/bin/bash
-
-# 사용법: ./insmod.sh [GC_MODE]
-# 예: ./insmod.sh 1  -> gc_mode=1로 로드
-# 예: ./insmod.sh    -> gc_mode=0(기본값)으로 로드
+# =============================================================
+# insmod.sh - NVMeVirt 모듈 로드
+#
+# 사용법:
+#   ./insmod.sh           → gc_mode=0 (Greedy)
+#   ./insmod.sh 0         → Greedy
+#   ./insmod.sh 1         → Cost-Benefit
+#   ./insmod.sh 2         → CAT
+#   ./insmod.sh 3         → RL
+# =============================================================
 
 GC_MODE=${1:-0}
-SLC_MODE=${2:-0}
 
-# 설정 변수 (수정됨)
-MEM_START="4G"    # 4G -> 12G로 변경 (GRUB 예약 위치랑 맞춰야 함!)
-MEM_SIZE="12288M"   # 1024M -> 4096M (아까 4G 예약했으니, 꽉 채워 쓰는 게 이득)
+# 설정
+MEM_START="4G"
+MEM_SIZE="12288M"
 CPUS="1,2,3,4"
+MODULE_PATH="/home/meen/nvmevirt_gc/nvmev.ko"
+
+# 모드 이름
+case $GC_MODE in
+    0) MODE_NAME="Greedy" ;;
+    1) MODE_NAME="Cost-Benefit" ;;
+    2) MODE_NAME="CAT" ;;
+    3) MODE_NAME="RL" ;;
+    *) echo "❌ 잘못된 gc_mode: $GC_MODE (0~3)"
+       exit 1 ;;
+esac
 
 echo "----------------------------------------"
 
-# 1. 기존에 모듈이 떠있는지 확인하고 제거
+# 기존 모듈 제거
 if lsmod | grep -q "nvmev"; then
-    echo "🔄 기존 nvmev 모듈이 감지되어 제거합니다..."
+    echo "🔄 기존 nvmev 모듈 제거 중..."
     sudo rmmod nvmev
-    # 제거가 덜 끝났을 수 있으니 잠시 대기 (안전장치)
     sleep 1
 else
-    echo "ℹ️  기존 모듈 없음. 바로 시작합니다."
+    echo "ℹ️  기존 모듈 없음"
 fi
 
-# 2. 모듈 삽입
-MODULE_PATH="/home/meen/NVMeVirt/nvmev.ko"
-echo "🚀 nvmev.ko 로드 중... (GC_MODE=$GC_MODE)"
-CMD="sudo insmod $MODULE_PATH memmap_start=$MEM_START memmap_size=$MEM_SIZE cpus=$CPUS gc_mode=$GC_MODE slc_mode=$SLC_MODE"
-echo "   Command: $CMD"
+# 모듈 삽입
+echo "🚀 nvmev.ko 로드 중... (gc_mode=$GC_MODE: $MODE_NAME)"
+CMD="sudo insmod $MODULE_PATH memmap_start=$MEM_START memmap_size=$MEM_SIZE cpus=$CPUS gc_mode=$GC_MODE"
+echo "   $CMD"
 
 $CMD
 
-# 3. 결과 확인
 if [ $? -eq 0 ]; then
-    echo "✅ 성공! 모듈이 로드되었습니다."
+    echo "✅ 성공! gc_mode=$GC_MODE ($MODE_NAME)"
     lsmod | grep nvmev
 else
-    echo "❌ 실패! 로그를 확인하세요 (dmesg)."
+    echo "❌ 실패!"
+    sudo dmesg | tail -10
     exit 1
 fi
 echo "----------------------------------------"

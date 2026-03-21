@@ -1,0 +1,10 @@
+=========================================
+ FIO Read Workload
+ Dir: /home/meen/NVMeVirt/mnt
+=========================================
+
+[Test 1] Random Read 4K
+fio: pid=0, err=28/file:filesetup.c:240, func=write, error=No space left on device
+fio: pid=0, err=28/file:filesetup.c:240, func=write, error=No space left on device
+fio: pid=0, err=28/file:filesetup.c:240, func=write, error=No space left on device
+fio: pid=0, err=28/file:filesetup.c:240, func=write, error=No space left on device

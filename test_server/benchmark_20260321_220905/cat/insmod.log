@@ -1,0 +1,7 @@
+----------------------------------------
+ℹ️  기존 모듈 없음
+🚀 nvmev.ko 로드 중... (gc_mode=2: CAT)
+   sudo insmod /home/meen/nvmevirt_gc/nvmev.ko memmap_start=4G memmap_size=12288M cpus=1,2,3,4 gc_mode=2
+✅ 성공! gc_mode=2 (CAT)
+nvmev                  86016  0
+----------------------------------------

@@ -1,0 +1,23 @@
+=========================================
+ FIO Write Workload
+ Dir: /home/meen/NVMeVirt/mnt
+=========================================
+
+[Phase 0] Initial fill...
+[Phase 0] Fill done
+
+[Phase 1] Uniform random (Greedy territory)
+[Phase 1] Done
+
+[Phase 2] Hot/Cold zipf locality (CB territory)
+[Phase 2] Done
+
+[Phase 3] Sequential burst (CAT territory)
+[Phase 3] Done
+
+[Phase 4] Hot spot shift (RL territory)
+[Phase 4] Done
+
+=========================================
+ Write workload complete!
+=========================================
